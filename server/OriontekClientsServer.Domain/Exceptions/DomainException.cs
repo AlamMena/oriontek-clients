@@ -8,8 +8,8 @@ namespace OriontekClientsServer.Domain.Exceptions
 {
     public class DomainException : Exception
     {
-        public string Code { get; }
+        public int Code { get; }
 
-        public DomainException(string message, string code = "") : base(message) => Code = code;
+        public DomainException(string message, int code) : base(message) => Code = code;
     }
 }
