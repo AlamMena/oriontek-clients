@@ -1,0 +1,12 @@
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\bin\Debug\net8.0\OriontekClientsServer.Domain.deps.json
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\bin\Debug\net8.0\OriontekClientsServer.Domain.dll
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\bin\Debug\net8.0\OriontekClientsServer.Domain.pdb
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\OriontekClientsServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\OriontekClientsServer.Domain.AssemblyInfoInputs.cache
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\OriontekClientsServer.Domain.AssemblyInfo.cs
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\OriontekClientsServer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\OriontekClientsServer.Domain.sourcelink.json
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\OriontekClientsServer.Domain.dll
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\refint\OriontekClientsServer.Domain.dll
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\OriontekClientsServer.Domain.pdb
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Domain\obj\Debug\net8.0\ref\OriontekClientsServer.Domain.dll

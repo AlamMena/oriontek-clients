@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "OriontekClientsServer.Domain/1.0.0": {
+        "runtime": {
+          "OriontekClientsServer.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OriontekClientsServer.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

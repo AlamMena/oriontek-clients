@@ -10,7 +10,7 @@ namespace OriontekClientsServer.Domain.Interfaces
 {
     public interface IClientRepository : IRepository<Client>
     {
-        Task<Client?> GetClientWithAddressesAsync(Guid clientId);
+        Task<Client?> GetClientByIdWithAddressesAsync(int id);
         Task<IEnumerable<Client>> GetClientsByNameAsync(string name);
     }
 }

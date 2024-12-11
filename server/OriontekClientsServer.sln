@@ -5,7 +5,14 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OriontekClientsServer.Domain", "OriontekClientsServer.Domain\OriontekClientsServer.Domain.csproj", "{4C454772-555A-4052-8FCB-AFE2C11EB3B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OriontekClientsServer.Application", "OriontekClientsServer.Application\OriontekClientsServer.Application.csproj", "{18E68E4A-7CDC-4A86-9A9F-CC202AB74F33}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC431C5E-03E1-46E5-8CDA-0872E8979129}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OriontekClientsServer.Infrastucture.Persitence", "OriontekClientsServer.Infrastucture.Persitence\OriontekClientsServer.Infrastucture.Persitence.csproj", "{AE8EE628-89DC-4873-8092-6F17D2093B4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OriontekClientsServer.Application", "OriontekClientsServer.Application\OriontekClientsServer.Application.csproj", "{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +24,14 @@ Global
 		{4C454772-555A-4052-8FCB-AFE2C11EB3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C454772-555A-4052-8FCB-AFE2C11EB3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C454772-555A-4052-8FCB-AFE2C11EB3B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18E68E4A-7CDC-4A86-9A9F-CC202AB74F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18E68E4A-7CDC-4A86-9A9F-CC202AB74F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18E68E4A-7CDC-4A86-9A9F-CC202AB74F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18E68E4A-7CDC-4A86-9A9F-CC202AB74F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8EE628-89DC-4873-8092-6F17D2093B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8EE628-89DC-4873-8092-6F17D2093B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8EE628-89DC-4873-8092-6F17D2093B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8EE628-89DC-4873-8092-6F17D2093B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

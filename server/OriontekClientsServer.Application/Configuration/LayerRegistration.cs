@@ -6,10 +6,9 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OriontekClientsServer.Application
+namespace OriontekClientsServer.Application.Configuration
 {
-    
-    public static class ServiceRegistration
+    public static class LayerRegistration
     {
         public static void AddApplicationLayer(this IServiceCollection services)
         {

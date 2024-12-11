@@ -1,0 +1,16 @@
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\bin\Debug\net8.0\OriontekClientsServer.Application.deps.json
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\bin\Debug\net8.0\OriontekClientsServer.Application.dll
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\bin\Debug\net8.0\OriontekClientsServer.Application.pdb
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\bin\Debug\net8.0\OriontekClientsServer.Domain.dll
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\bin\Debug\net8.0\OriontekClientsServer.Domain.pdb
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\OriontekClientsServer.Application.csproj.AssemblyReference.cache
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\OriontekClientsServer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\OriontekClientsServer.Application.AssemblyInfoInputs.cache
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\OriontekClientsServer.Application.AssemblyInfo.cs
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\OriontekClientsServer.Application.csproj.CoreCompileInputs.cache
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\OriontekClientsServer.Application.sourcelink.json
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\Oriontek.DA1AF969.Up2Date
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\OriontekClientsServer.Application.dll
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\refint\OriontekClientsServer.Application.dll
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\OriontekClientsServer.Application.pdb
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Application\obj\Debug\net8.0\ref\OriontekClientsServer.Application.dll
