@@ -27,53 +27,46 @@ namespace OriontekClientsServer.Application.Features.Clients.Handlers
 
         public async Task<ClientWithAddressesDto> Handle(UpdateClientCommand request, CancellationToken cancellationToken)
         {
-            try
+            var dbClient = await _clientRepository.GetByIdAsync(request.Id);
+
+            if (dbClient == null)
             {
-                var dbClient = await _clientRepository.GetByIdAsync(request.Id);
-
-                if (dbClient == null)
-                {
-                    throw new DomainException("The client doesn't exists!", (int)HttpStatusCode.NotFound);
-                }
-
-                var clientWithSameIdentification = await _clientRepository.GetClientByIdentificationAsync(request.Identification);
-                if (clientWithSameIdentification != null && clientWithSameIdentification.Id != request.Id)
-                {
-                    throw new DomainException("The identification number is already registered", (int)HttpStatusCode.Conflict);
-                }
-
-                var client = _mapper.Map<Client>(request);
-
-                // performing adding 
-                var newAddresses = client.Addresses.Where(d => d.Id == 0);
-                if (newAddresses.Any())
-                {
-                    await _clientRepository.AddClientAddresses(client.Id, newAddresses);
-                }
-
-                // performing update
-                var addressesToUpdate = client.Addresses.Where(r => dbClient.Addresses.Any(e => e.Id == r.Id && e.Id != 0));
-                if (addressesToUpdate.Any())
-                {
-                    await _clientRepository.UpdateClientAddresses(client.Id, addressesToUpdate);
-                }
-
-                // performing delete
-                var addressesToRemove = dbClient.Addresses.Where(r => !client.Addresses.Any(e => e.Id == r.Id && e.Id != 0));
-                if (addressesToRemove.Any())
-                {
-                    await _clientRepository.DeleteClientAddresses(client.Id, addressesToRemove);
-                }
-
-                await _clientRepository.UpdateAsync(client);
-                var response = _mapper.Map<Client, ClientWithAddressesDto>(client);
-
-                return response;
+                throw new DomainException("The client doesn't exists!", (int)HttpStatusCode.NotFound);
             }
-            catch (Exception ex)
+
+            var clientWithSameIdentification = await _clientRepository.GetClientByIdentificationAsync(request.Identification);
+            if (clientWithSameIdentification != null && clientWithSameIdentification.Id != request.Id)
             {
-                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
+                throw new DomainException("The identification number is already registered", (int)HttpStatusCode.Conflict);
             }
+
+            var client = _mapper.Map<Client>(request);
+
+            // performing adding 
+            var newAddresses = client.Addresses.Where(d => d.Id == 0);
+            if (newAddresses.Any())
+            {
+                await _clientRepository.AddClientAddresses(client.Id, newAddresses);
+            }
+
+            // performing update
+            var addressesToUpdate = client.Addresses.Where(r => dbClient.Addresses.Any(e => e.Id == r.Id && e.Id != 0));
+            if (addressesToUpdate.Any())
+            {
+                await _clientRepository.UpdateClientAddresses(client.Id, addressesToUpdate);
+            }
+
+            // performing delete
+            var addressesToRemove = dbClient.Addresses.Where(r => !client.Addresses.Any(e => e.Id == r.Id && e.Id != 0));
+            if (addressesToRemove.Any())
+            {
+                await _clientRepository.DeleteClientAddresses(client.Id, addressesToRemove);
+            }
+
+            await _clientRepository.UpdateAsync(client);
+            var response = _mapper.Map<Client, ClientWithAddressesDto>(client);
+
+            return response;
         }
     }
 }

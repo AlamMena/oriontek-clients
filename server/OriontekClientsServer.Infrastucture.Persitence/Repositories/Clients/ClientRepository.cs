@@ -8,6 +8,7 @@ using OriontekClientsServer.Infrastucture.Persitence.Contexts;
 using OriontekClientsServer.Infrastucture.Persitence.Repositories.core;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -38,7 +39,6 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.Clients
                 throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
             }
         }
-
         public async Task<Client?> GetClientByIdentificationAsync(string identification)
         {
             try
@@ -46,6 +46,40 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.Clients
                 var client = await _dbContext.Clients.FirstOrDefaultAsync(d => d.Identification == identification);
 
                 return client;
+            }
+            catch (Exception ex)
+            {
+                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
+            }
+        }
+
+        public async Task<IEnumerable<Client>> GetClientsByNameAsync(string name, int page, int limit)
+        {
+            try
+            {
+                var clients = await _dbContext.Clients
+                        .Where(d => d.Name.Contains(name))
+                        .Skip(limit * (page - 1))
+                        .Take(limit)
+                        .ToListAsync();
+
+                return clients;
+            }
+            catch (Exception ex)
+            {
+                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
+            }
+        }
+
+        public async Task<int> CountClientsByNameAsync(string name)
+        {
+            try
+            {
+                var count = await _dbContext.Clients
+                        .Where(d => d.Name.Contains(name))
+                        .CountAsync();
+
+                return count;
             }
             catch (Exception ex)
             {

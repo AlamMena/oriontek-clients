@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using OriontekClientsServer.Application.Registration;
 using OriontekClientsServer.Infrastucture.Persitence.Registration;
+using OriontekClientsServer.Presentation.WebApi.Middleware;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +40,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 app.UseAuthorization();
 

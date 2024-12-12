@@ -19,75 +19,50 @@ namespace OriontekClientsServer.Presentation.WebApi.Controllers.V1
         [HttpPost("client")]
         public async Task<IActionResult> CreateAsync([FromBody] CreateClientCommand command)
         {
-            try
-            {
-                var client = await Mediator.Send(command);
-                return Created($"/client/{client.Id}", client);
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException(ex.Message, ex);
-            }
+
+            var client = await Mediator.Send(command);
+            return Created($"/client/{client.Id}", client);
+
 
         }
 
         [HttpGet("clients")]
         public async Task<IActionResult> GetAllAsync([FromQuery] GetAllClientsCommand command)
         {
-            try
-            {
-                var clients = await Mediator.Send(command);
-                return Ok(clients);
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException(ex.Message, ex);
-            }
+
+            var clients = await Mediator.Send(command);
+            return Ok(clients);
+
 
         }
 
         [HttpGet("client/{Id}")]
         public async Task<IActionResult> GetByIdAsync(GetClientByIdCommand command)
         {
-            try
-            {
-                var client = await Mediator.Send(command);
-                return Ok(client);
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException(ex.Message, ex);
-            }
+            var client = await Mediator.Send(command);
+            return Ok(client);
 
+        }
+
+        [HttpGet("clients/name")]
+        public async Task<IActionResult> GetClientsByNameAsync([FromQuery] GetClientsByNameCommand command)
+        {
+            var client = await Mediator.Send(command);
+            return Ok(client);
         }
         [HttpPatch("client")]
         public async Task<IActionResult> UpdateAsync([FromBody] UpdateClientCommand command)
         {
-            try
-            {
-                var client = await Mediator.Send(command);
 
-                return Ok(client);
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException(ex.Message, ex);
-            }
+            var client = await Mediator.Send(command);
+            return Ok(client);
 
         }
         [HttpDelete("client/{Id}")]
         public async Task<IActionResult> DeleteAsync(DeleteClientCommand command)
         {
-            try
-            {
-                await Mediator.Send(command);
-
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException(ex.Message, ex);
-            }
+            await Mediator.Send(command);
+            return Ok();
 
         }
     }

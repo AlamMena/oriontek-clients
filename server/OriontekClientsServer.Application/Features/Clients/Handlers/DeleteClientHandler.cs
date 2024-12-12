@@ -27,23 +27,15 @@ namespace OriontekClientsServer.Application.Features.Clients.Handlers
 
         public async Task<int> Handle(DeleteClientCommand request, CancellationToken cancellationToken)
         {
-            try
+            var dbClient = await _clientRepository.GetByIdAsync(request.Id);
+
+            if (dbClient == null)
             {
-                var dbClient = await _clientRepository.GetByIdAsync(request.Id);
-
-                if (dbClient == null)
-                {
-                    throw new DomainException("The client doesn't exists!", (int)HttpStatusCode.NotFound);
-                }
-
-                var response = await _clientRepository.DeleteAsync(request.Id);
-
-                return 1;
+                throw new DomainException("The client doesn't exists!", (int)HttpStatusCode.NotFound);
             }
-            catch (Exception ex)
-            {
-                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
-            }
+
+            var response = await _clientRepository.DeleteAsync(request.Id);
+            return 1;
         }
     }
 }

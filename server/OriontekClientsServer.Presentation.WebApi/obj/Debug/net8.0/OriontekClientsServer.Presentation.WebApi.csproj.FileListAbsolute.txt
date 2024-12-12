@@ -56,3 +56,4 @@ C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServ
 C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Presentation.WebApi\obj\Debug\net8.0\OriontekClientsServer.Presentation.WebApi.pdb
 C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Presentation.WebApi\obj\Debug\net8.0\OriontekClientsServer.Presentation.WebApi.genruntimeconfig.cache
 C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Presentation.WebApi\obj\Debug\net8.0\ref\OriontekClientsServer.Presentation.WebApi.dll
+C:\Users\am004289\Desktop\projects-p\oriontek-clients\server\OriontekClientsServer.Presentation.WebApi\obj\Debug\net8.0\OriontekClientsServer.Presentation.WebApi.MvcApplicationPartsAssemblyInfo.cs

@@ -21,25 +21,20 @@ namespace OriontekClientsServer.Application.Features.Clients.Commands
 
         public async Task<ClientWithAddressesDto> Handle(CreateClientCommand request, CancellationToken cancellationToken)
         {
-            try
+
+            var clientWithSameIdentification = await _clientRepository.GetClientByIdentificationAsync(request.Identification);
+            if (clientWithSameIdentification != null)
             {
-                var clientWithSameIdentification = await _clientRepository.GetClientByIdentificationAsync(request.Identification);
-                if (clientWithSameIdentification != null)
-                {
-                    throw new DomainException("The identification number is already registered", (int)HttpStatusCode.Conflict);
-                }
-
-                var client = _mapper.Map<Client>(request);
-                await _clientRepository.AddAsync(client);
-
-                var response = _mapper.Map<Client, ClientWithAddressesDto>(client);
-
-                return response;
+                throw new DomainException("The identification number is already registered", (int)HttpStatusCode.Conflict);
             }
-            catch (Exception ex)
-            {
-                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
-            }
+
+            var client = _mapper.Map<Client>(request);
+            await _clientRepository.AddAsync(client);
+
+            var response = _mapper.Map<Client, ClientWithAddressesDto>(client);
+
+            return response;
+
         }
     }
 }

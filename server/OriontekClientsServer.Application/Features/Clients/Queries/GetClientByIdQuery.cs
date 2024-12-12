@@ -26,23 +26,18 @@ namespace OriontekClientsServer.Application.Features.Clients.Queries
 
         public async Task<ClientWithAddressesDto> Handle(GetClientByIdCommand request, CancellationToken cancellationToken)
         {
-            try
+
+            var client = await _clientRepository.GetClientByIdWithAddressesAsync(request.Id);
+
+            if (client == null)
             {
-                var client = await _clientRepository.GetClientByIdWithAddressesAsync(request.Id);
-
-                if (client == null)
-                {
-                    throw new DomainException("Client not found", (int)HttpStatusCode.NotFound);
-                }
-
-                var clientResponse = _mapper.Map<ClientWithAddressesDto>(client);
-
-                return clientResponse;
+                throw new DomainException("Client not found", (int)HttpStatusCode.NotFound);
             }
-            catch (Exception ex)
-            {
-                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
-            }
+
+            var clientResponse = _mapper.Map<ClientWithAddressesDto>(client);
+
+            return clientResponse;
+
         }
 
     }

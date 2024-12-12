@@ -21,20 +21,15 @@ namespace OriontekClientsServer.Application.Features.Clients.Queries
 
         public async Task<ClientsPaginatedDto> Handle(GetAllClientsCommand request, CancellationToken cancellationToken)
         {
-            try
-            {
-                var clients = await _clientRepository.GetAllPaginatedAsync(request.Page, request.Limit);
 
-                return new ClientsPaginatedDto
-                {
-                    DataCount = await _clientRepository.CountAsync(),
-                    Clients = _mapper.Map<IEnumerable<ClientDto>>(clients)
-                };
-            }
-            catch (Exception ex)
+            var clients = await _clientRepository.GetAllPaginatedAsync(request.Page, request.Limit);
+
+            return new ClientsPaginatedDto
             {
-                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
-            }
+                DataCount = await _clientRepository.CountAsync(),
+                Clients = _mapper.Map<IEnumerable<ClientDto>>(clients)
+            };
+
         }
     }
 }

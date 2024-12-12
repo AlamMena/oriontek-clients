@@ -43,7 +43,7 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.core
                 var entity = await Entities.FindAsync(Id);
                 if (entity is not null)
                 {
-                    entity.IsDeleted = false;
+                    entity.IsDeleted = true;
                     entity.UpdatedAt = DateTime.UtcNow;
                     await _dbContext.SaveChangesAsync();
 

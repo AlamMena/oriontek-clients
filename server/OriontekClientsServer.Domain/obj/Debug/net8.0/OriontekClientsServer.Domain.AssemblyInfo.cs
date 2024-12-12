@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OriontekClientsServer.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aec0ff901ed628ada1fdab39388097ec0c10a302")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de08ef20f2801a3531f614e4cde8a45e10cda5a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("OriontekClientsServer.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OriontekClientsServer.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
