@@ -14,7 +14,7 @@ To get started with this project, you can either run.
 1. **Clone the repository**:
 
    ```bash
-   git clone [https://your-repository-url.git](https://github.com/AlamMena/oriontek-clients.git)
+   git clone https://your-repository-url.git](https://github.com/AlamMena/oriontek-clients.git
 2. **Init the database**
    ```bash
    cd server
