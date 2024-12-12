@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ED96F06-7CAE-4670-A350-FB653FADF2E7}|OriontekClientsServer.Presentation.WebApi\\OriontekClientsServer.Presentation.WebApi.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.presentation.webapi\\controllers\\v1\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ED96F06-7CAE-4670-A350-FB653FADF2E7}|OriontekClientsServer.Presentation.WebApi\\OriontekClientsServer.Presentation.WebApi.csproj|solutionrelative:oriontekclientsserver.presentation.webapi\\controllers\\v1\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.infrastucture.persitence\\contexts\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|solutionrelative:oriontekclientsserver.infrastucture.persitence\\contexts\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.infrastucture.persitence\\entitiesconfig\\clients\\clientaddressconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|solutionrelative:oriontekclientsserver.infrastucture.persitence\\entitiesconfig\\clients\\clientaddressconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.infrastucture.persitence\\entitiesconfig\\clients\\clientsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|solutionrelative:oriontekclientsserver.infrastucture.persitence\\entitiesconfig\\clients\\clientsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.infrastucture.persitence\\repositories\\clients\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|solutionrelative:oriontekclientsserver.infrastucture.persitence\\repositories\\clients\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}|OriontekClientsServer.Application\\OriontekClientsServer.Application.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.application\\features\\clients\\handlers\\updateclienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}|OriontekClientsServer.Application\\OriontekClientsServer.Application.csproj|solutionrelative:oriontekclientsserver.application\\features\\clients\\handlers\\updateclienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}|OriontekClientsServer.Application\\OriontekClientsServer.Application.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.application\\features\\clients\\handlers\\createclienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D973B2-AF75-4911-BCB3-CC29CFBD6E9D}|OriontekClientsServer.Application\\OriontekClientsServer.Application.csproj|solutionrelative:oriontekclientsserver.application\\features\\clients\\handlers\\createclienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C454772-555A-4052-8FCB-AFE2C11EB3B2}|OriontekClientsServer.Domain\\OriontekClientsServer.Domain.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.domain\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C454772-555A-4052-8FCB-AFE2C11EB3B2}|OriontekClientsServer.Domain\\OriontekClientsServer.Domain.csproj|solutionrelative:oriontekclientsserver.domain\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Migrations\\20241212035535_NamingAddresses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OriontekClientsServer.Infrastucture.Persitence\\Migrations\\20241212035535_NamingAddresses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|c:\\users\\am004289\\desktop\\projects-p\\oriontek-clients\\server\\oriontekclientsserver.infrastucture.persitence\\repositories\\core\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8EE628-89DC-4873-8092-6F17D2093B4A}|OriontekClientsServer.Infrastucture.Persitence\\OriontekClientsServer.Infrastucture.Persitence.csproj|solutionrelative:oriontekclientsserver.infrastucture.persitence\\repositories\\core\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Presentation.WebApi\\Controllers\\V1\\ClientsController.cs",
-              "RelativeDocumentMoniker": "OriontekClientsServer.Presentation.WebApi\\Controllers\\V1\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Presentation.WebApi\\Controllers\\V1\\ClientsController.cs",
-              "RelativeToolTip": "OriontekClientsServer.Presentation.WebApi\\Controllers\\V1\\ClientsController.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAiwD4AAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "ClientAddressConfig.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\EntitiesConfig\\Clients\\ClientAddressConfig.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Infrastucture.Persitence\\EntitiesConfig\\Clients\\ClientAddressConfig.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\EntitiesConfig\\Clients\\ClientAddressConfig.cs",
+              "RelativeToolTip": "OriontekClientsServer.Infrastucture.Persitence\\EntitiesConfig\\Clients\\ClientAddressConfig.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T01:31:08.752Z",
+              "WhenOpened": "2024-12-12T04:46:39.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientsConfig.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\EntitiesConfig\\Clients\\ClientsConfig.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Infrastucture.Persitence\\EntitiesConfig\\Clients\\ClientsConfig.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\EntitiesConfig\\Clients\\ClientsConfig.cs",
+              "RelativeToolTip": "OriontekClientsServer.Infrastucture.Persitence\\EntitiesConfig\\Clients\\ClientsConfig.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:58:08.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20241212035535_NamingAddresses.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Migrations\\20241212035535_NamingAddresses.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Infrastucture.Persitence\\Migrations\\20241212035535_NamingAddresses.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Migrations\\20241212035535_NamingAddresses.cs",
+              "RelativeToolTip": "OriontekClientsServer.Infrastucture.Persitence\\Migrations\\20241212035535_NamingAddresses.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:55:35.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Contexts\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Infrastucture.Persitence\\Contexts\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Contexts\\ApplicationContext.cs",
+              "RelativeToolTip": "OriontekClientsServer.Infrastucture.Persitence\\Contexts\\ApplicationContext.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:36:46.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Repositories\\Core\\Repository.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Infrastucture.Persitence\\Repositories\\Core\\Repository.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Repositories\\Core\\Repository.cs",
+              "RelativeToolTip": "OriontekClientsServer.Infrastucture.Persitence\\Repositories\\Core\\Repository.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwEcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:31:50.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Repositories\\Clients\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Infrastucture.Persitence\\Repositories\\Clients\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Infrastucture.Persitence\\Repositories\\Clients\\ClientRepository.cs",
+              "RelativeToolTip": "OriontekClientsServer.Infrastucture.Persitence\\Repositories\\Clients\\ClientRepository.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAcwFMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:31:46.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateClientHandler.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Application\\Features\\Clients\\Handlers\\UpdateClientHandler.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Application\\Features\\Clients\\Handlers\\UpdateClientHandler.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Application\\Features\\Clients\\Handlers\\UpdateClientHandler.cs",
+              "RelativeToolTip": "OriontekClientsServer.Application\\Features\\Clients\\Handlers\\UpdateClientHandler.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAqwD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:17:35.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Domain\\Repositories\\IClientRepository.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Domain\\Repositories\\IClientRepository.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Domain\\Repositories\\IClientRepository.cs",
+              "RelativeToolTip": "OriontekClientsServer.Domain\\Repositories\\IClientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:16:54.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateClientHandler.cs",
+              "DocumentMoniker": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Application\\Features\\Clients\\Handlers\\CreateClientHandler.cs",
+              "RelativeDocumentMoniker": "OriontekClientsServer.Application\\Features\\Clients\\Handlers\\CreateClientHandler.cs",
+              "ToolTip": "C:\\Users\\am004289\\Desktop\\projects-p\\oriontek-clients\\server\\OriontekClientsServer.Application\\Features\\Clients\\Handlers\\CreateClientHandler.cs",
+              "RelativeToolTip": "OriontekClientsServer.Application\\Features\\Clients\\Handlers\\CreateClientHandler.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T03:16:19Z",
               "EditorCaption": ""
             }
           ]

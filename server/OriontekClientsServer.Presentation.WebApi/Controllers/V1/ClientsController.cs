@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using OriontekClientsServer.Application.Features.Clients.Commands;
 using OriontekClientsServer.Application.Features.Clients.Requests;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -46,7 +47,7 @@ namespace OriontekClientsServer.Presentation.WebApi.Controllers.V1
         }
 
         [HttpGet("client/{Id}")]
-        public async Task<IActionResult> GetByIdAsync([FromQuery] GetClientByIdCommand command)
+        public async Task<IActionResult> GetByIdAsync(GetClientByIdCommand command)
         {
             try
             {
@@ -59,7 +60,35 @@ namespace OriontekClientsServer.Presentation.WebApi.Controllers.V1
             }
 
         }
+        [HttpPatch("client")]
+        public async Task<IActionResult> UpdateAsync([FromBody] UpdateClientCommand command)
+        {
+            try
+            {
+                var client = await Mediator.Send(command);
 
- 
+                return Ok(client);
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException(ex.Message, ex);
+            }
+
+        }
+        [HttpDelete("client/{Id}")]
+        public async Task<IActionResult> DeleteAsync(DeleteClientCommand command)
+        {
+            try
+            {
+                await Mediator.Send(command);
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException(ex.Message, ex);
+            }
+
+        }
     }
 }

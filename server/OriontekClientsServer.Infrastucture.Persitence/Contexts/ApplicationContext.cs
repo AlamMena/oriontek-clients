@@ -19,8 +19,10 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ClientsConfig());
+            modelBuilder.ApplyConfiguration(new ClientAddressConfig());
         }
 
         public DbSet<Client> Clients { get; set; }
+        public DbSet<ClientAddress> ClientsAddresses { get; set; }
     }
 }

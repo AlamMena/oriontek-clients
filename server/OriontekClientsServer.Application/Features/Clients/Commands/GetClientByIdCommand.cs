@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OriontekClientsServer.Application.Features.Clients.Requests
 {
-    public record GetClientByIdCommand : IRequest<ClientDto>
+    public record GetClientByIdCommand : IRequest<ClientWithAddressesDto>
     {
         public int Id { get; set; }
     }

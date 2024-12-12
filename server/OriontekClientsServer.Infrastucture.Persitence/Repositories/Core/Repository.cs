@@ -22,6 +22,10 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.core
         {
             try
             {
+                entity.CreatedAt = DateTime.UtcNow;
+                entity.UpdatedAt = null;
+                entity.IsDeleted = false;
+
                 await Entities.AddAsync(entity);
                 await _dbContext.SaveChangesAsync();
                 return entity;
@@ -32,18 +36,21 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.core
             }
         }
 
-        public virtual async Task<int> DeleteAsync(T entity)
+        public virtual async Task<int> DeleteAsync(int Id)
         {
             try
             {
-                if (entity is CoreEntity entityModel)
+                var entity = await Entities.FindAsync(Id);
+                if (entity is not null)
                 {
-                    entityModel.IsDeleted = true;
-                    Entities.Update(entity);
+                    entity.IsDeleted = false;
+                    entity.UpdatedAt = DateTime.UtcNow;
                     await _dbContext.SaveChangesAsync();
+
+                    return 1;
                 }
 
-                return await _dbContext.SaveChangesAsync();
+                return 0;
             }
             catch (Exception ex)
             {
@@ -51,17 +58,22 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.core
             }
         }
 
-        public virtual async Task<T> UpdateAsync(T entity)
+        public virtual async Task<T?> UpdateAsync(T entity)
         {
             try
             {
                 var entry = await Entities.FindAsync(entity.Id);
-                if (entry != null)
+                if (entry is not null)
                 {
+                    entity.CreatedAt = entry.CreatedAt;
+                    entity.UpdatedAt = DateTime.UtcNow;
+                    entity.IsDeleted = false;
+
                     _dbContext.Entry(entry).CurrentValues.SetValues(entity);
                     await _dbContext.SaveChangesAsync();
                 }
-                return entity;
+
+                return entry;
             }
             catch (Exception ex)
             {

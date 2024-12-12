@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace OriontekClientsServer.Application.Features.Clients.Queries
 {
-    public class GetClientByIdQueryHandler : IRequestHandler<GetClientByIdCommand, ClientDto>
+    public class GetClientByIdQueryHandler : IRequestHandler<GetClientByIdCommand, ClientWithAddressesDto>
     {
         private readonly IClientRepository _clientRepository;
         private readonly IMapper _mapper;
@@ -24,18 +24,18 @@ namespace OriontekClientsServer.Application.Features.Clients.Queries
             _mapper = mapper;
         }
 
-        public async Task<ClientDto> Handle(GetClientByIdCommand request, CancellationToken cancellationToken)
+        public async Task<ClientWithAddressesDto> Handle(GetClientByIdCommand request, CancellationToken cancellationToken)
         {
             try
             {
-                var client = await _clientRepository.GetByIdAsync(request.Id);
+                var client = await _clientRepository.GetClientByIdWithAddressesAsync(request.Id);
 
                 if (client == null)
                 {
                     throw new DomainException("Client not found", (int)HttpStatusCode.NotFound);
                 }
 
-                var clientResponse = _mapper.Map<ClientDto>(client);
+                var clientResponse = _mapper.Map<ClientWithAddressesDto>(client);
 
                 return clientResponse;
             }

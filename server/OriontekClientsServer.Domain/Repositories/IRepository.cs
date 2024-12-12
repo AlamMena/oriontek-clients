@@ -16,7 +16,7 @@ namespace OriontekClientsServer.Domain.Repositories
         Task<IEnumerable<T>> GetAllPaginatedAsync(int page, int limit);
         Task<int> CountAsync();
         Task<T> AddAsync(T entity);
-        Task<T> UpdateAsync(T entity);
-        Task<int> DeleteAsync(T entity);
+        Task<T?> UpdateAsync(T entity);
+        Task<int> DeleteAsync(int Id);
     }
 }

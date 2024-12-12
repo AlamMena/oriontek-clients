@@ -1,17 +1,17 @@
-﻿using OriontekClientsServer.Domain.Common;
+﻿using OriontekClientsServer.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OriontekClientsServer.Domain.Entities
+namespace OriontekClientsServer.Application.Dtos.Clients
 {
-    public class Address : CoreEntity
+    public class ClientAddressDto
     {
+        public int Id { get; set; }
         public string Street { get; set; } = null!;
         public string City { get; set; } = null!;
         public string ZipCode { get; set; } = null!;
-        public Client Client { get; set; } = null!;
     }
 }

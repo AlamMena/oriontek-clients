@@ -9,7 +9,7 @@ using System.Net;
 
 namespace OriontekClientsServer.Application.Features.Clients.Commands
 {
-    public class CreateClientHandler : IRequestHandler<Requests.CreateClientCommand, ClientDto>
+    public class CreateClientHandler : IRequestHandler<CreateClientCommand, ClientWithAddressesDto>
     {
         private readonly IClientRepository _clientRepository;
         private readonly IMapper _mapper;
@@ -19,14 +19,20 @@ namespace OriontekClientsServer.Application.Features.Clients.Commands
             _mapper = mapper;
         }
 
-        public async Task<ClientDto> Handle(CreateClientCommand request, CancellationToken cancellationToken)
+        public async Task<ClientWithAddressesDto> Handle(CreateClientCommand request, CancellationToken cancellationToken)
         {
             try
             {
+                var clientWithSameIdentification = await _clientRepository.GetClientByIdentificationAsync(request.Identification);
+                if (clientWithSameIdentification != null)
+                {
+                    throw new DomainException("The identification number is already registered", (int)HttpStatusCode.Conflict);
+                }
+
                 var client = _mapper.Map<Client>(request);
                 await _clientRepository.AddAsync(client);
 
-                var response = _mapper.Map<Client, ClientDto>(client);
+                var response = _mapper.Map<Client, ClientWithAddressesDto>(client);
 
                 return response;
             }

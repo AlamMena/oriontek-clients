@@ -39,9 +39,95 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.Clients
             }
         }
 
-        public Task<IEnumerable<Client>> GetClientsByNameAsync(string name)
+        public async Task<Client?> GetClientByIdentificationAsync(string identification)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var client = await _dbContext.Clients.FirstOrDefaultAsync(d => d.Identification == identification);
+
+                return client;
+            }
+            catch (Exception ex)
+            {
+                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
+            }
+        }
+
+        public async Task<int> AddClientAddresses(int clientId, IEnumerable<ClientAddress> addresses)
+        {
+            try
+            {
+                var client = await _dbContext.Clients.FindAsync(clientId);
+
+                if (client != null)
+                {
+                    foreach (var item in addresses)
+                    {
+                        item.Client = client;
+                    }
+                    await _dbContext.ClientsAddresses.AddRangeAsync(addresses);
+                }
+
+                return await _dbContext.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
+            }
+        }
+
+        public async Task<int> DeleteClientAddresses(int clientId, IEnumerable<ClientAddress> addresses)
+        {
+            try
+            {
+                var dbAddresses = await _dbContext.ClientsAddresses.Include(d => d.Client).Where(d => d.Client.Id == clientId).ToListAsync();
+                foreach (var address in addresses)
+                {
+                    var dbAddress = dbAddresses.FirstOrDefault(d => d.Id == address.Id);
+
+                    if (dbAddress != null)
+                    {
+                        dbAddress.IsDeleted = true;
+                        dbAddress.UpdatedAt = DateTime.UtcNow;
+
+                    }
+                }
+
+                return await _dbContext.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
+            }
+        }
+
+        public async Task<int> UpdateClientAddresses(int clientId, IEnumerable<ClientAddress> addresses)
+        {
+            try
+            {
+                var dbAddresses = await _dbContext.ClientsAddresses.Include(d => d.Client).Where(d => d.Client.Id == clientId).ToListAsync();
+                foreach (var address in addresses)
+                {
+                    var dbAddress = dbAddresses.FirstOrDefault(d => d.Id == address.Id);
+
+                    if (dbAddress != null)
+                    {
+                        dbAddress.IsDeleted = false;
+                        dbAddress.UpdatedAt = DateTime.UtcNow;
+
+                        _dbContext.Entry(dbAddress).CurrentValues.SetValues(address);
+                    }
+                }
+
+                return await _dbContext.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw new DomainException(ex.Message, (int)HttpStatusCode.InternalServerError);
+            }
         }
     }
 }

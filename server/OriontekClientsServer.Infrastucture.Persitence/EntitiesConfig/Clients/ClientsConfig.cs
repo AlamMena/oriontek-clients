@@ -17,6 +17,11 @@ namespace OriontekClientsServer.Infrastucture.Persitence.EntitiesConfig.Clients
             builder.Property(x => x.Name).HasMaxLength(60);
             builder.Property(x => x.LastName).HasMaxLength(60);
             builder.Property(x => x.Identification).HasMaxLength(30);
+
+            builder.HasMany(d => d.Addresses).WithOne(d => d.Client).OnDelete(DeleteBehavior.Restrict);
+
+            builder.Navigation(d => d.Addresses).AutoInclude();
+            builder.HasQueryFilter(d => !d.IsDeleted);
         }
     }
 }
