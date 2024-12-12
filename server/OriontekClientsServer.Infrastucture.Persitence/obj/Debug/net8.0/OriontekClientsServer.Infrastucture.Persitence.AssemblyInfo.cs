@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OriontekClientsServer.Infrastucture.Persitence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5b3d81a913b7aafa8d8821e93072cf7fe4d4d87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c869ca159eebe7df6ff8ddfdb4bae015384fbf9")]
 [assembly: System.Reflection.AssemblyProductAttribute("OriontekClientsServer.Infrastucture.Persitence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OriontekClientsServer.Infrastucture.Persitence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

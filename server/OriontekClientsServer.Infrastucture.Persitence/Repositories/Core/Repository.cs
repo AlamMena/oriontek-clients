@@ -12,13 +12,11 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.core
     {
         private readonly ApplicationContext _dbContext;
         protected DbSet<T> Entities;
-        protected readonly IConfiguration Configuration;
 
-        public Repository(ApplicationContext dbContext, IConfiguration configuration)
+        public Repository(ApplicationContext dbContext)
         {
             _dbContext = dbContext;
             Entities = _dbContext.Set<T>();
-            Configuration = configuration;
         }
         public virtual async Task<T> AddAsync(T entity)
         {

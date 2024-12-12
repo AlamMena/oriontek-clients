@@ -12,16 +12,15 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using static OriontekClientsServer.Infrastucture.Persitence.Repositories.Clients.ClientRepository;
+
 
 namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.Clients
 {
-    internal class ClientRepository : Repository<Client>, IClientRepository
+    public class ClientRepository : Repository<Client>, IClientRepository
     {
         private readonly ApplicationContext _dbContext;
 
-        public ClientRepository(ApplicationContext dbContext, IConfiguration configuration) : base(dbContext,
-            configuration)
+        public ClientRepository(ApplicationContext dbContext) : base(dbContext)
         {
             _dbContext = dbContext;
         }
