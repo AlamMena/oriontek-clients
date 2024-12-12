@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace OriontekClientsServer.Application.Features.Clients.Queries
 {
-    public class GetClientByIdQueryHandler : IRequestHandler<GetClientByIdRequest, ClientDto>
+    public class GetClientByIdQueryHandler : IRequestHandler<GetClientByIdCommand, ClientDto>
     {
         private readonly IClientRepository _clientRepository;
         private readonly IMapper _mapper;
@@ -24,7 +24,7 @@ namespace OriontekClientsServer.Application.Features.Clients.Queries
             _mapper = mapper;
         }
 
-        public async Task<ClientDto> Handle(GetClientByIdRequest request, CancellationToken cancellationToken)
+        public async Task<ClientDto> Handle(GetClientByIdCommand request, CancellationToken cancellationToken)
         {
             try
             {

@@ -100,8 +100,8 @@ namespace OriontekClientsServer.Infrastucture.Persitence.Repositories.core
             try
             {
                 return await Entities
-                    .Take(limit)
                     .Skip(limit * (page - 1))
+                    .Take(limit)
                     .ToListAsync();
 
             }

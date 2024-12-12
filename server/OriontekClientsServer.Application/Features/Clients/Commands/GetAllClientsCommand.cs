@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace OriontekClientsServer.Application.Features.Clients.Requests
 {
-    public record GetClientByIdRequest : IRequest<ClientDto>
+    public class GetAllClientsCommand : IRequest<ClientsPaginatedDto>
     {
-        public int Id { get; set; }
+        public int Page { get; set; }
+        public int Limit { get; set; }
     }
 }

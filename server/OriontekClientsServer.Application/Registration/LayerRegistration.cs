@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OriontekClientsServer.Application.Configuration
+namespace OriontekClientsServer.Application.Registration
 {
     public static class LayerRegistration
     {

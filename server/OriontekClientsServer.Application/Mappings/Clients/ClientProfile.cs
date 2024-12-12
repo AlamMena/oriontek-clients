@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using OriontekClientsServer.Application.Dtos.Clients;
+using OriontekClientsServer.Application.Features.Clients.Requests;
 using OriontekClientsServer.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace OriontekClientsServer.Application.Mappings.Clients
         public ClientProfile()
         {
             CreateMap<Client, ClientDto>().ReverseMap();
+            CreateMap<CreateClientCommand, Client>();
         }
     }
 }

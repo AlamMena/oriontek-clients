@@ -8,7 +8,7 @@ using System.Net;
 
 namespace OriontekClientsServer.Application.Features.Clients.Queries
 {
-    public class GetAllClientsQueryHandler : IRequestHandler<GetAllClientsRequest, ClientsPaginatedDto>
+    public class GetAllClientsQueryHandler : IRequestHandler<GetAllClientsCommand, ClientsPaginatedDto>
     {
         private readonly IClientRepository _clientRepository;
         private readonly IMapper _mapper;
@@ -19,7 +19,7 @@ namespace OriontekClientsServer.Application.Features.Clients.Queries
             _mapper = mapper;
         }
 
-        public async Task<ClientsPaginatedDto> Handle(GetAllClientsRequest request, CancellationToken cancellationToken)
+        public async Task<ClientsPaginatedDto> Handle(GetAllClientsCommand request, CancellationToken cancellationToken)
         {
             try
             {
