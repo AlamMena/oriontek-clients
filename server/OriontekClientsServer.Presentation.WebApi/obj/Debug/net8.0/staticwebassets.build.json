@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9e3GJZh8EZ/kf9S2WufiFCaKhmH03UrGkwkL0TCVdMc=",
+  "Source": "OriontekClientsServer.Presentation.WebApi",
+  "BasePath": "_content/OriontekClientsServer.Presentation.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

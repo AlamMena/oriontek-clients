@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OriontekClientsServer.Presentation.WebApi.props" />
+</Project>

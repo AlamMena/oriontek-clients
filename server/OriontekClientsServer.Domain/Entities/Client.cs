@@ -9,5 +9,5 @@ public class Client : CoreEntity
     public string Email { get; set; } = null!;
     public string Identification { get; set; } = null!;
     public string PhoneNumber { get; set; } = null!;
-    public ICollection<Address> Addresses { get; set; } = [];
+    public ICollection<ClientAddress> Addresses { get; set; } = [];
 }
