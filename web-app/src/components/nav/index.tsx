@@ -37,17 +37,17 @@ export default function NavBar() {
         <NavbarContent className="hidden sm:flex gap-3">
           <NavbarItem>
             <Link color="foreground" href="#">
-              Features
+              Home
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
             <Link aria-current="page" color="secondary" href="#">
-              Customers
+              Clients
             </Link>
           </NavbarItem>
           <NavbarItem>
             <Link color="foreground" href="#">
-              Integrations
+              Features
             </Link>
           </NavbarItem>
         </NavbarContent>
